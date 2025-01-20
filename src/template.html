@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/8ffb8fde35.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack App</title>
+</head>
+<body>
+  <div class = "main">
+    <div class = "top-row">
+        <div class = "leftside">
+          <img src="../images/overcast.png" alt="overcast">
+            <h3 class="weather">Sunny</h3>
+            <h4 class="location">dundalk, Louth</h4>
+            <p class="date">12/5/2001</p>
+            <p class="time">12:05</p>
+            <span class = "main-deg"><h3 class="main-temp">5.7</h3><h3 class="corf">°C</h3></span>
+            
+        </div>
+        <div class = "center">
+            <span class="temp"><span class = "celsius other" style="cursor: pointer;">°C&nbsp;</span><p>/&nbsp;</p><span class = "farenheit other">°F</span></span>
+            <input type="text" placeholder="Search location..." id = "searchbar">
+            <button class = "search" ><i class="fa-solid fa-magnifying-glass" title="search"></i></button>
+            <p class = "error-message"></p>
+        </div>
+    </div>
+
+    <div class="middle">
+      <div class="middle-left">
+        <div class = "display">
+          <div class = "imagine"></div>
+        </div>
+        <div class="sections">
+          <i class="fa-solid fa-wind logo"></i>
+          <p class="subhead">Wind Speed</p>
+          <p class = "wind reach"></p>
+        </div>
+        <div class="sections">
+          <i class="fa-solid fa-temperature-three-quarters logo"></i>
+          <p class="subhead">Feels Like</p>
+          <span class="format"><p class = "feel reach"></p><p class="corf"></p></span>
+        </div>
+        <div class="sections">
+          <i class="fa-solid fa-droplet-slash logo"></i>
+          <p class="subhead">Humidity </p>
+          <p class = "humidity reach"></p>
+        </div>
+        <div class="sections">
+          <i class="fa-solid fa-cloud-rain logo"></i>
+          <p class="subhead">Chance of Rain</p>
+          <p class = "rain reach"></p>
+        </div>
+        <div class="hourly">
+          <p>Hourly</p>
+          <div class = "please">
+            <button class = "operationgt">&lt</button>
+            <span class="sort"></button><button class="circle"></button><button class="circle"></button><button class="circle"></button></span>
+            <button class = "operationlt">&gt</button>
+          </div>
+        </div>
+      </div>
+      <div class="middle-center similar">
+        <p class="tommorowday"></p>
+        <p class="tommorowtemp"></p>
+        <p class="tommorowfeel"></p>
+        
+      </div>
+
+      <div class="middle-right similar">
+        <p class="dayafterday"></p>
+        <p class="dayaftertemp"></p>
+        <p class="dayafterfeel"></p>
+      </div>
+        
+    </div>
+    <div class="bottom">
+        
+    </div>
+  </div>
+</body>
+</html>
