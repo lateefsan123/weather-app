@@ -10,17 +10,16 @@
   <div class = "main">
     <div class = "top-row">
         <div class = "leftside">
-          <img src="../images/overcast.png" alt="overcast">
             <h3 class="weather">Sunny</h3>
             <h4 class="location">dundalk, Louth</h4>
             <p class="date">12/5/2001</p>
             <p class="time">12:05</p>
-            <span class = "main-deg"><h3 class="main-temp">5.7</h3><h3 class="corf">°C</h3></span>
+            <span class = "main-deg"><h3 class="main-temp">5.7</h3><h3 class="corf">°F</h3></span>
             
         </div>
         <div class = "center">
             <span class="temp"><span class = "celsius other" style="cursor: pointer;">°C&nbsp;</span><p>/&nbsp;</p><span class = "farenheit other">°F</span></span>
-            <input type="text" placeholder="Search location..." id = "searchbar">
+            <input type="text" placeholder="Search location..." id = "searchbar" autocomplete="off">
             <button class = "search" ><i class="fa-solid fa-magnifying-glass" title="search"></i></button>
             <p class = "error-message"></p>
         </div>
@@ -29,7 +28,7 @@
     <div class="middle">
       <div class="middle-left">
         <div class = "display">
-          <div class = "imagine"></div>
+          <img class = "imagine" src="#">
         </div>
         <div class="sections">
           <i class="fa-solid fa-wind logo"></i>
@@ -54,27 +53,70 @@
         <div class="hourly">
           <p>Hourly</p>
           <div class = "please">
-            <button class = "operationgt">&lt</button>
-            <span class="sort"></button><button class="circle"></button><button class="circle"></button><button class="circle"></button></span>
-            <button class = "operationlt">&gt</button>
+            <button class = "operationgt lefty"><i class="fa-solid fa-less-than"></i></i></button>
+            <span class="sort"><button class="circle firstpage" data-index="1"></button><button class="circle secondpage" data-index="2"></button><button class="circle thirdpage" data-index="1"></button></span>
+            <button class = "operationlt righty"><i class="fa-solid fa-greater-than"></i></button>
           </div>
         </div>
       </div>
       <div class="middle-center similar">
         <p class="tommorowday"></p>
-        <p class="tommorowtemp"></p>
-        <p class="tommorowfeel"></p>
+        <p class="tommorowtemp"><p class="tommorowtemp corf"></p></p>
+        <p class="tommorowfeel"><p class="tommorowfeel corf"></p></p>
+        <img class = "tommorowpic" src="#">
         
       </div>
 
       <div class="middle-right similar">
         <p class="dayafterday"></p>
-        <p class="dayaftertemp"></p>
-        <p class="dayafterfeel"></p>
+        <p class="dayaftertemp"><p class="dayaftertemp corf"></p></p>
+        <p class="dayafterfeel"><p class="dayafterfeel corf"></p></p>
+        <img class = "dayafterpic" src="#">
+
       </div>
         
     </div>
     <div class="bottom">
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
+      <div class="daysoftheweek">
+        <p class="time"></p>
+        <p class="degrees"></p>
+        <img src="#" alt="" class="houricons">
+      </div>
         
     </div>
   </div>

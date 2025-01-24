@@ -8,21 +8,29 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-  },plugins: [
+  },
+  plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html',
+      template: './src/template.html', // Template to use
     }),
-  ], module: {
+  ],
+  module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
-      },{
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource', // Asset handling for images
+      },
+      {
+        test: /\.html$/i, // Process HTML files
+        use: ['html-loader'],
       },
     ],
-  },devtool: 'eval-source-map',
+  },
+  devtool: 'eval-source-map',
   devServer: {
     watchFiles: ['src/**/*'],
     static: path.resolve(__dirname, 'dist'), // Serve files from the 'dist' folder
@@ -30,4 +38,3 @@ module.exports = {
     hot: true,   // Enable Hot Module Replacement (HMR)
   },
 };
-
